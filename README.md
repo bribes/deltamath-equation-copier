@@ -1,7 +1,7 @@
-# Deltamath Question Copier
-Easily copy deltamath questions to uhh calculate it easier.
+# Deltamath Equation Copier
+Easily copy deltamath equations to uhh calculate them easier.
 
 Create a bookmark with this URL
 ```javascript
-try{problemObj=problem.qlinesCopy[0],prompt("Equation:",`${problemObj.left.replace(/[{}]/g,"")}=${problemObj.right}`)}catch{alert("Equation not detected!")};void 0
+javascript:try{problemObj=problem.qlinesCopy[0],equation=problemObj.line?problemObj.line:`${problemObj.left.replace(/[{}]/g,"")}=${problemObj.right}`,prompt("Equation:",equation)}catch{alert("Equation not detected!")};void 0
 ```
